@@ -1,0 +1,23 @@
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Feed</title>
+        <link rel="stylesheet" href="videofeed.css">
+    </head>
+    <body>
+        <div id="feed"></div>
+
+    <script src="videofeed.js"></script>
+    <script>
+        const feed = document.getElementById('feed');
+
+        data.forEach(item => {
+            const videoCard = document.createElement('short-video');
+            videoCard.setAttribute('src', item.url);
+            videoCard.setAttribute('description', item.desc);
+            feed.appendChild(videoCard);
+        });
+    </script>
+    </body>
+</html>
